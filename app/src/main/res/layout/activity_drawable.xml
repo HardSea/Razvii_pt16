@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue_250"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_gradient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_btn_gradient"
+        android:text="@string/gradient_button"
+        android:textColor="@color/white"
+        android:theme="@style/Theme.Razvii_pt16.SecondButton"
+        app:layout_constraintBottom_toTopOf="@+id/btn_change_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_change_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_btn_selector"
+        android:text="@string/i_can_change_my_color"
+        android:theme="@style/Theme.Razvii_pt16.SecondButton"
+        app:layout_constraintBottom_toTopOf="@+id/iv_layer_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_gradient" />
+
+    <TextView
+        android:id="@+id/text_for_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:paddingBottom="8dp"
+        android:text="@string/android_and_his_sons"
+        android:textColor="@color/green_100"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/iv_layer_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+
+        android:id="@+id/iv_layer_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_layer_list_example"
+        android:contentDescription="@string/image_with_android"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_change_color" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

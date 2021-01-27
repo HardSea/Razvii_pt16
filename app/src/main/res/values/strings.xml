@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Razvii_pt16</string>
+    <string name="download_normal_image">Download normal image</string>
+    <string name="download_crop_image">Download crop image</string>
+    <string name="image_container">Image container</string>
+    <string name="gradient_button">Gradient Button</string>
+    <string name="i_can_change_my_color">I can change my color</string>
+    <string name="android_and_his_sons">Android and his sons:</string>
+    <string name="image_with_android">Image with Android</string>
+    <string name="start_drawable_activity">Start Drawable Activity</string>
+    <string name="start_bitmap_activity">Start Bitmap ACtivity</string>
+    <string name="start_glide_activity">Start Glide ACtivity</string>
+    <string name="string_from_byte_array">String from byte array: %1$s</string>
+    <string name="get_byte_array_this_image">Get Byte array this image</string>
+    <string name="draw_on_bitmap">Draw on Bitmap</string>
+    <string name="icon_report_problem">Icon report problem</string>
+</resources>

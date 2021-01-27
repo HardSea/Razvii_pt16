@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue_250"
+    tools:context=".BitmapActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_attention"
+        android:layout_width="215dp"
+        android:layout_height="215dp"
+        android:layout_margin="36dp"
+        android:contentDescription="@string/icon_report_problem"
+        android:src="@drawable/attention"
+        app:layout_constraintBottom_toTopOf="@id/btn_draw_on_bitmap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_draw_on_bitmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_btn_selector"
+        android:text="@string/draw_on_bitmap"
+        android:theme="@style/Theme.Razvii_pt16.SecondButton"
+        app:layout_constraintBottom_toTopOf="@id/et_byte_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_attention" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_byte_array"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="36dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@color/white"
+        android:inputType="none"
+        android:maxLines="1"
+        android:textIsSelectable="true"
+        app:layout_constraintBottom_toTopOf="@id/btn_get_byte_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_draw_on_bitmap" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_get_byte_array"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_btn_selector"
+        android:text="@string/get_byte_array_this_image"
+        android:theme="@style/Theme.Razvii_pt16.SecondButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_byte_array" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
